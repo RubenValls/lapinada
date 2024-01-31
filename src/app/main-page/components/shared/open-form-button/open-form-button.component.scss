@@ -19,6 +19,11 @@
     touch-action: manipulation;
     width: 100%;
     will-change: transform;
+
+    i{
+      font-weight: bold;
+      margin-left: 5px;
+    }
   }
   
   .custom-button:disabled {
