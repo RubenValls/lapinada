@@ -20,5 +20,11 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+
+        @media (width < 600px) {
+            .navigation-link{
+                visibility: hidden;
+            }
+        }
     }
 }
