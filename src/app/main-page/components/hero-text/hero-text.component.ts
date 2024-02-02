@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Attribute, Component } from '@angular/core';
 
 @Component({
   selector: 'app-hero-text',
@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './hero-text.component.scss'
 })
 export class HeroTextComponent {
+
+  constructor(
+    @Attribute('header') public header: string,
+    @Attribute('subHeader') public subHeader: string
+  ) {}
 
 }

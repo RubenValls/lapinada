@@ -1,11 +1,16 @@
 .carousel {
   height: 400px;
-  max-width: 100%;;
+  min-height: 100%;
+  max-width: 100%;
   overflow: hidden;
   text-align: center;
   position: relative;
   padding: 0;
   list-style: none;
+
+  @media (width > 600px) {
+    height: 650px;
+}
 
 }
 .carousel__controls,
@@ -220,31 +225,31 @@ h1 {
 }
 .carousel__slide:nth-of-type(1),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
-  background-image: url("https://unsplash.it/300?random");
+  background-image: url("https://img.mesvilaweb.cat/wp-content/uploads/sites/2135/2015/10/F0004.jpg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(2),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  background-image: url("https://unsplash.it/600?random");
+  background-image: url("https://estaticos-cdn.prensaiberica.es/clip/cbbe553b-873c-4f45-8bf0-be38bc2fbacc_16-9-aspect-ratio_default_0.jpg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(3),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
-  background-image: url("https://unsplash.it/900?random");
+  background-image: url("https://www.lalcudiadecrespins.es/sites/lalcudiadecrespins.es/files/Ayuntamiento/bg-landingbn.jpg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(4),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
-  background-image: url("https://unsplash.it/1200?random");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Canals_i_l%27Alc%C3%BAdia_de_Crespins_des_de_la_Riba_de_Sagres.jpg/2560px-Canals_i_l%27Alc%C3%BAdia_de_Crespins_des_de_la_Riba_de_Sagres.jpg");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(5),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
-  background-image: url("https://unsplash.it/1500?random");
+  background-image: url("https://4.bp.blogspot.com/-D-a9rdhSkfE/XNM6Td5jRgI/AAAAAAAALg8/c9AWkP3j96EZRYBRsXlY1uoNIa-e9ajeQCLcBGAs/s1600/Estaci%25C3%25B3n%2Bferrocarril%2Bde%2Bl%2527Alc%25C3%25BAdia%2Bde%2BCrespins%2Bfoto%2B19Tarrestnom65.jpg");
   background-size: cover;
   background-position: center;
 }
