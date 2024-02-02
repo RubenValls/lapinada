@@ -4,6 +4,7 @@ import { ImagesSliderComponent } from './components/images-slider/images-slider.
 import { HeroTextComponent } from './components/hero-text/hero-text.component';
 import { GoogleMapComponent } from './components/google-map/google-map.component';
 import { FeatureCardComponent } from './components/shared/feature-card/feature-card.component';
+import { featureCardData } from './components/shared/feature-card/cards-data';
 
 @Component({
   selector: 'app-main-page',
@@ -19,5 +20,7 @@ import { FeatureCardComponent } from './components/shared/feature-card/feature-c
   styleUrl: './main-page.component.scss'
 })
 export class MainPageComponent {
+
+  featureCardData = [...featureCardData]
 
 }

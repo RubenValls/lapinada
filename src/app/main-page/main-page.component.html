@@ -6,13 +6,16 @@
     <app-images-slider></app-images-slider>
 </section>
 <section class="context-container">
-    <app-hero-text header='¿Cuál es su ubicación?'></app-hero-text>
-    <app-google-map id="ubicacion"></app-google-map>
+    <app-hero-text header='¿Cuál es su ubicación?' id="ubicacion"></app-hero-text>
+    <app-google-map></app-google-map>
     <app-hero-text subHeader='La zona:'></app-hero-text>
     <section class="features-container">
-        <app-feature-card></app-feature-card>
-        <app-feature-card></app-feature-card>
-        <app-feature-card></app-feature-card>
-        <app-feature-card></app-feature-card>
+        @for (card of featureCardData; track $index) {
+            <app-feature-card
+                icon = {{card.icon}}
+                title = {{card.title}}
+                text= {{card.text}}
+            ></app-feature-card>
+        }
     </section>
 </section>
