@@ -20,7 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-
+        
         a{
             color: black;
             text-decoration: none;
@@ -39,6 +39,10 @@
         @media (width < 600px) {
             .navigation-link{
                 visibility: hidden;
+            }
+
+            app-open-form-button{
+                margin-right: 25px;
             }
         }
     }
