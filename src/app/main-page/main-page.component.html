@@ -2,13 +2,16 @@
     <app-header></app-header>
 </section>
 <section class="images-carousel">
-    <app-hero-text header='Próxima promoción "La Pinada"' subHeader="Viviendas adosadas en l'Alcúdia de Crespins"></app-hero-text>
+    <app-hero-text 
+        preHeader="Próxima promoción:" 
+        header='"La Pinada"' 
+        subHeader="Viviendas adosadas en l'Alcúdia de Crespins"></app-hero-text>
     <app-images-slider></app-images-slider>
 </section>
 <section class="context-container">
     <app-hero-text header='¿Cuál es su ubicación?' id="ubicacion"></app-hero-text>
     <app-google-map></app-google-map>
-    <app-hero-text subHeader='La zona:'></app-hero-text>
+    <app-hero-text subHeader='La zona:' id="caracteristicas"></app-hero-text>
     <section class="features-container">
         @for (card of featureCardData; track $index) {
             <app-feature-card
@@ -18,4 +21,13 @@
             ></app-feature-card>
         }
     </section>
+</section>
+<section class="houses-container">
+    <app-hero-text subHeader='Características de las viviendas' id="viviendas"></app-hero-text>
+    @for (item of listItemData; track $index) {
+        <app-list-item
+            summary = {{item.summary}}
+            text = {{item.text}}
+        ></app-list-item>
+    }
 </section>

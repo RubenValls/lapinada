@@ -11,6 +11,7 @@ export class FeatureCardComponent {
   @Input() icon: string | undefined;
   @Input() title: string | undefined;
   @Input() text: string | undefined;
+  
   constructor() {}
   
 }

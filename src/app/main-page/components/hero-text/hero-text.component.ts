@@ -10,6 +10,7 @@ import { Attribute, Component } from '@angular/core';
 export class HeroTextComponent {
 
   constructor(
+    @Attribute('preHeader') public preHeader: string,
     @Attribute('header') public header: string,
     @Attribute('subHeader') public subHeader: string
   ) {}

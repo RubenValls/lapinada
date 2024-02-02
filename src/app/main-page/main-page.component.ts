@@ -5,6 +5,8 @@ import { HeroTextComponent } from './components/hero-text/hero-text.component';
 import { GoogleMapComponent } from './components/google-map/google-map.component';
 import { FeatureCardComponent } from './components/shared/feature-card/feature-card.component';
 import { featureCardData } from './components/shared/feature-card/cards-data';
+import { ListItemComponent } from './components/shared/list-item/list-item.component';
+import { listItemData } from './components/shared/list-item/list-item-data';
 
 @Component({
   selector: 'app-main-page',
@@ -14,7 +16,8 @@ import { featureCardData } from './components/shared/feature-card/cards-data';
     ImagesSliderComponent,
     HeroTextComponent,
     GoogleMapComponent,
-    FeatureCardComponent
+    FeatureCardComponent,
+    ListItemComponent,
   ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
@@ -22,5 +25,6 @@ import { featureCardData } from './components/shared/feature-card/cards-data';
 export class MainPageComponent {
 
   featureCardData = [...featureCardData]
+  listItemData = [...listItemData]
 
 }
