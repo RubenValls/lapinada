@@ -7,6 +7,7 @@ import { FeatureCardComponent } from './components/shared/feature-card/feature-c
 import { featureCardData } from './components/shared/feature-card/cards-data';
 import { ListItemComponent } from './components/shared/list-item/list-item.component';
 import { listItemData } from './components/shared/list-item/list-item-data';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 @Component({
   selector: 'app-main-page',
@@ -18,6 +19,7 @@ import { listItemData } from './components/shared/list-item/list-item-data';
     GoogleMapComponent,
     FeatureCardComponent,
     ListItemComponent,
+    ContactFormComponent
   ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
