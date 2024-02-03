@@ -11,6 +11,7 @@ export class ListItemComponent {
 
   @Input() summary: string | undefined;
   @Input() text: string | undefined;
+  @Input() index: string | undefined;
 
   constructor() {}
 

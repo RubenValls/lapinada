@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class OpenFormButtonComponent {
 
+  onHandleClick(){
+    window.scrollTo(0, document.body.scrollHeight)
+  }
+
 }
+

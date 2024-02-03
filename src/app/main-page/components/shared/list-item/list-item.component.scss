@@ -1,73 +1,63 @@
-details div {
-	border-left: 2px solid #000;
-	border-right: 2px solid #000;
-	border-bottom: 2px solid #000;
-	padding: 1.5em;
-}
-
-details div > * + * {
-	margin-top: 1.5em;
-}
-
-details + details {
-	margin-top: .5rem;
-}
-
-summary {
-	list-style: none;
-}
-
-summary::-webkit-details-marker {
-	display: none;
-}
-
-summary {
-	border: 2px solid #000;
-	padding: .75em 1em;
-	cursor: pointer;
-	position: relative;
-	padding-left: calc(1.75rem + .75rem + .75rem);
-}
-
-summary:before {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: .75rem;
-	content: "↓";
-	width: 1.75rem;
-	height: 1.75rem;
-	background-color: #000;
-	color: #FFF;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	flex-shrink: 0;
-}
-
-details[open] summary {
-	background-color: #eee;
-}
-
-details[open] summary:before {
-	content: "↑";
-}
-
-summary:hover {
-	background-color: #eee;
-}
-
-a {
-	color: inherit;
-	font-weight: 600;
-	text-decoration: none;
-	box-shadow: 0 1px 0 0;
-}
-
-a:hover {
-	box-shadow: 0 3px 0 0;
-}
-
-code {
-	font-weight: 600;
-}
+.tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+  }
+  .tab-label {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    background: #292929;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+  }
+  .tab-label:hover {
+    background: grey;
+  }
+  .tab-label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+  }
+  .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #292929;
+    background: white;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+  }
+  .tab-close {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #292929;
+    cursor: pointer;
+  }
+  .tab-close:hover {
+    background: grey;
+  }
+  
+  input{
+    display: none;
+  }
+  input:checked + .tab-label {
+    background: #292929;
+  }
+  input:checked + .tab-label::after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+  }

@@ -24,12 +24,23 @@
 </section>
 <section class="houses-container">
     <app-hero-text subHeader='Características de las viviendas' id="viviendas"></app-hero-text>
-    @for (item of listItemData; track $index) {
-        <app-list-item
-            summary = {{item.summary}}
-            text = {{item.text}}
-        ></app-list-item>
-    }
+    <div class="rt-container">
+        <div class="col-rt-12">
+            <div class="Scriptcontent">
+                <div class="container">
+              <div class="tabs">
+                @for (item of listItemData; track $index) {
+                    <app-list-item
+                        index = {{$index}}
+                        summary = {{item.summary}}
+                        text = {{item.text}}
+                    ></app-list-item>
+                }
+  </div>  
+          </div>
+          </div>
+      </div>
+  </div>
 </section>
 <section class="contact-form">
     <app-hero-text header='Apúntate a la lista de espera' subHeader='O resuelve cualquier duda' id="viviendas"></app-hero-text>
