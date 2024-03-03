@@ -1,7 +1,9 @@
 <div class="container">
     <form target="_blank" action="https://formsubmit.co/lapinadapromocion@gmail.com" method="POST">      
-        <input name="name" type="text" class="feedback-input" placeholder="Nombre" required/>   
-        <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
+        <input name="name" type="text" class="feedback-input" placeholder="Nombre" required/>
+        <input type="hidden" name="_autoresponse" value="your custom message">
+        <input type="hidden" name="_next" value="https://lapinada.vercel.app/thanks">
+        <input name="email" type="email" class="feedback-input" placeholder="Email" required/>
         <textarea name="text" class="feedback-input" placeholder="Comentario" required></textarea>
         <input type="submit" value="Enviar"/>
     </form>

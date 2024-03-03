@@ -8,6 +8,11 @@
         <a href="#ubicacion" class="navigation-link">Ubicación</a>
         <a href="#caracteristicas" class="navigation-link">Características</a>
         <a href="#viviendas" class="navigation-link">Viviendas</a>
-        <app-open-form-button></app-open-form-button>
+        @if(isThanks){
+            <app-back-to-main-page-button></app-back-to-main-page-button>
+        }
+        @if(!isThanks){
+            <app-open-form-button></app-open-form-button>
+        }
     </div>
 </div>
